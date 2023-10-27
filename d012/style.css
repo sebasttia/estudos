@@ -1,12 +1,30 @@
 @charset "UFT-8";
 
+@font-face {
+    font-family: 'Sans', times, serif;
+    src: url(PlaypenSans-VariableFont_wght.ttf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap');
+/*  
+Tipos de format()
+- opentype (otf)
+- truetype (ttf)
+- embedded 
+- truetype-att (Apple advanced Typographv)
+-svg
+*/
+
+:root {
+    --fonte1: 
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 html, body { 
-  
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -37,8 +55,7 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-section {
-    padding-top: 10vh;
+section { 
     padding-bottom: 10vh;
 }
 
