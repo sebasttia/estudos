@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Desafio002</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-
+            width: 400px;
+            
         }
         table {
-            border-collapse: collapse;
-            width: 600px;
+            width: 500px;
+
         }
 
         td {
-            border: 1px solid black;
+            
             padding: 10px;
             text-align: center;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.247);
+            border: 1px solid black;
         }
-
     </style>
 </head>
 <body>
-    <h1>Mesclagem de Células</h1>
     <table>
         <tr>
-            <td>A</td>
-            <td colspan="2">B</td>
-           
+            <td colspan="4">A</td>
+            <td rowspan="5">B</td>
         </tr>
         <tr>
-            <td rowspan="3">D</td>
+            <td rowspan="5">C</td>
+        </tr>
+        <tr>
+            <td>D</td>
             <td>E</td>
-            <td rowspan="2">F</td>
+            <td>F</td>
         </tr>
         <tr>
+            <td>G</td>
             <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
             
         </tr>
         <tr>
-            <td colspan="2">M</td>
+            <td colspan="4">N</td>
+           
         </tr>
     </table>
 </body>
