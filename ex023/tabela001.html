@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+        table {
+          
+            width: 400px;
+            border-collapse: collapse;
+
+        }
+
+        tr {
+            background-color: #817b7b4c;
+        }
+
+        tr.linha {
+            background-color: gray;
+            background-image: url(imagens-cap19/pattern004.png);
+            background-position: left center;
+        }
+
+        tr.linha2 {
+            background-image: url(imagens-cap19/pattern004.png);
+            background-position: center right;
+        }
+
+        tr.linha3 {
+            background-image: url(imagens-cap19/pattern004.png);
+            background-position: left bottom;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado {
+            background-color: aquamarine;
+        }
+
+     
+
+    </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
@@ -15,7 +61,7 @@
                 TABLE DATA = dado de tabela
     -->
     <table>
-        <tr> <!--Primeira linha-->
+        <tr class="linha"> <!--Primeira linha-->
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
@@ -24,15 +70,15 @@
         </tr>
 
 
-        <tr>
+        <tr class="linha2">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
             <td>D2</td>
-            <td>E2</td>
+            <td class="dado">E2</td>
         </tr>
 
-        <tr>
+        <tr class="linha3">
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
@@ -46,6 +92,14 @@
             <td>C4</td>
             <td>D4</td>
             <td>E4</td>
+        </tr>
+
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td>C5</td>
+            <td>D5</td>
+            <td>E5</td>
         </tr>
     </table>
 </body>
