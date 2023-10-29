@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grande</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.6em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(61, 73, 73);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 11px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: slategray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+            font-weight: bold;
+        }/* tag para deixar zebrado a sua tabelas */
+        
+        .cid {
+            text-align: left;
+
+        }
+
+        .num2 {
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!-- COL Usar para a coluna embaixo-->
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="cid">São Paulo</td>
+                <td class="num2"> 45 919 049</td>
+            </tr>
+            <tr>
+                <td class="cid">Minas Gerais</td>
+                <td class="num2">21 168 791</td>
+            </tr>
+            <tr>
+                <td class="cid">Rio de Janeiro</td>
+                <td class="num2">17 264 943</td>
+            </tr> 
+            <tr>
+                <td class="cid">Bahia</td>
+                <td class="num2">14.873.064</td>
+            </tr> 
+            <tr>
+                <td class="cid">Paraná</td>
+                <td class="num2">11.433.957</td>
+            </tr> 
+            <tr>
+                <td class="cid">Rio Grande do Sul</td>
+                <td class="num2">11.377.239</td>
+            </tr> 
+            <tr>
+                <td class="cid">Pernambuco</td>
+                <td class="num2">9.557.071</td>
+            </tr> 
+            <tr>
+                <td class="cid">Ceará</td>
+                <td class="num2">9.132.078</td>
+            </tr> 
+            <tr>
+                <td class="cid">Pará</td>
+                <td class="num2">8.602.865</td>
+            </tr> 
+            <tr>
+                <td class="cid">Santa Catarina</td>
+                <td class="num2">7.164.788</td>
+            </tr> 
+            <tr>
+                <td class="cid">Maranhão</td>
+                <td class="num2">7.075.181</td>
+            </tr> 
+            <tr>
+                <td class="cid">Goiás</td>
+                <td class="num2">7.018.354</td>
+            </tr> 
+            <tr>
+                <td class="cid">Amazonas</td>
+                <td class="num2">4.144.597</td>
+            </tr> 
+            <tr>
+                <td class="cid">Espírito Santos</td>
+                <td class="num2">4.018.650</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="cid" scope="row">Total de Habitantes</th> <!-- ROW Usar para a mesma linha-->
+                <td class="num2" ><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nostrum inventore tempore eius dignissimos, molestiae officia architecto totam. Dicta magni reprehenderit cupiditate? Adipisci maxime vero iusto dicta, in dolorem veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum perspiciatis consequatur molestias iure magni totam? Ex dolores repellat fugit deleniti at inventore quo dolorum soluta suscipit! Quis, eum impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illum! Pariatur, quas adipisci repellat ea perferendis tempora ut maiores nulla ipsa eos exercitationem id, aperiam dolore. Quibusdam dolorum ab ea!</p>
+    
+</body>
+</html>
